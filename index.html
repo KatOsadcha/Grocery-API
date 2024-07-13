@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test CORS</title>
+  </head>
+  <body>
+    <script>
+      const testCors = () => {
+        fetch("http://localhost:3000", {
+          method: "OPTIONS",
+        })
+          .then((res) => {
+            console.log("Preflight CORS request successful");
+            return res.json();
+          })
+          .then((data) => console.log(data))
+          .catch((error) => console.error("Error:", error));
+      };
+      testCors();
+    </script>
+  </body>
+</html>
