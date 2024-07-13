@@ -13,7 +13,7 @@ This project is a RESTful API for managing a grocery store’s operations, built
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/grocery-store-api.git
+    git clone https://github.com/KatOsadcha/Grocery-API
     cd grocery-store-api
     ```
 
